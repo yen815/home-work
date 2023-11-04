@@ -1,8 +1,33 @@
-* {
-  margin: 0;
-  padding: 0;
+/* 변수 */
+:root {
+  --base-height: 310px;
+}
+
+/* 오뚜기 : width: 502px, height: 310px */
+/* 카밀, 곰곰 : width: 243px, height: 310px */
+/* 여백: 16px */
+
+body {
+  height: var(--base-height);
+}
+
+/* 레이아웃 */
+.ottogi, .kamill, .gomgom{
+  border: 1px solid #C4C4C4;
 }
 
 .ottogi {
-  
+  display: flex;
+  flex: wrap;
+}
+
+.logo-1 {
+  width: 502px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ottogi > h2 {
+  font: #4E4E4E;
 }
