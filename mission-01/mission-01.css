@@ -17,7 +17,7 @@ body {
 }
 
 .ottogi {
-  display: flex;
+  display: inline-block;
   flex: wrap;
 }
 
