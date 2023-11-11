@@ -1,0 +1,160 @@
+/* 공통 스타일 - reset */
+.reset-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+.reset-box {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* 숨김 콘텐츠 */
+.sr-only, legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* 기본 스타일 */
+body, body *, body *::before, body *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: #fff;
+  max-width: 1440px;
+  max-height: 900px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 헤더 */
+.nav-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  padding-right: 5px;
+  background-color: #fff;
+}
+
+.nav-container a {
+  display: flex;
+  flex-flow: row;
+}
+.nav-container img {
+  padding-right: 150px;
+  
+}
+
+.title-list {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.title-list a{
+  list-style-type: none;
+  text-decoration: none;
+  padding-right: 8px;
+}
+
+/* 로그인 */
+.login {
+  width: 1440px;
+  height: 850px;
+  background: url(./img/커피\ 이미지.svg) no-repeat;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  padding-top: 100px;
+}
+
+.logo-title {
+  text-align: center;
+}
+
+.login-title h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.login-title h3 {
+  font-size: 23px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.login-title p{
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+}
+
+.form {
+  margin-top: 100px;
+}
+
+#userEmail, #userPwd {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: none;
+  width: 540px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.user-email, .user-pwd {
+  display: flex;
+  justify-content: center;
+}
+
+.user-email:hover:after {
+  content: "이메일";
+  position: fixed;
+  transform: translate(-250px, -20px);
+}
+
+.user-pwd:hover::after {
+  content: "패스워드";
+  position: fixed;
+  transform: translate(-242px, -20px);
+}
+
+.form button {
+  border: 1px solid #fff;
+  border-radius: 7px;
+  background: none;
+  color: #fff;
+  font-weight: bold;
+  width: 260px;
+  height: 48px;
+  font-size: 20px;
+  margin: 20px;
+  justify-content: space-between;
+}
+
+.login-button:hover{
+  background-color: #fff;
+  color: #24388D;
+  background-image: url(./img/화살표\(블루\).svg);
+  background-position: 220px;
+  background-repeat: no-repeat;
+}

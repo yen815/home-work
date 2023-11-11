@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이디야 로그인</title>
+  <link rel="stylesheet" href="mission-02.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="nav-container">
+      <a href="/">
+        <img src="./img/로고 (밝은 테마).svg" alt="이디야 로고">
+      </a>
+      <ul class="title-list">
+        <li><a href="/">이디야 디자인</a></li>
+        <li><a href="/">로그인</a></li>
+        <li><a href="/">회원가입</a></li>
+        <li><a href="/">이디야 음료</a></li>
+        <li><a href="/">이디야 뉴스</a></li>
+        <li><a href="/">매장찾기</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="login reset-box">
+    <div class="login-title">
+      <h2>로그인</h2>
+      <h3>Welcome, Ediya Coffee</h3>
+      <p>이디야커피에 오신 것을 환영합니다.</p>
+    </div>
+    <div class="form">
+      <form action="/" class="login-form" method="get">
+        <fieldset class="reset-box">
+          <legend>회원 로그인 폼</legend>
+          <div class="user-email">
+            <label for="userEmail" class="sr-only">이메일</label>
+            <input type="email" id="userEmail" placeholder="yamoo9@euid.dev" required name="userEmail" />
+          </div>
+          <div class="user-pwd">
+            <label for="userPwd" class="sr-only">패스워드</label>
+            <input type="password" id="userPwd" placeholder="패스워드" required name="userPwd" />
+          </div>
+          <div class="btn">
+            <button class="login-button">로그인
+              <img src="./img/화살표.svg" alt="클릭">
+            </button>
+            <button class="login-button">회원가입
+              <img src="./img/화살표.svg" alt="클릭">
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
